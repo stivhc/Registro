@@ -70,7 +70,9 @@ Resultado: Los registros de mayor antigüedad corresponden al día '2021-01-01'.
 SELECT * FROM inscritos WHERE fecha = (SELECT MIN(fecha) FROM inscritos);
 ```
 Resultado: El primer día registrado es '2021-01-01', con un total de 100 inscritos (44 de Blog y 56 de Página).
+
 5. ¿Qué día se inscribieron la mayor cantidad de personas y cuántas personas se inscribieron ese día?
-Query:
+```
 SELECT fecha, SUM(cantidad) AS inscritos_por_dia FROM inscritos GROUP BY fecha ORDER BY inscritos_por_dia DESC LIMIT 1;
+```
 Resultado: El día con mayor cantidad de inscritos fue '2021-01-08' con un total de 182 inscritos.
