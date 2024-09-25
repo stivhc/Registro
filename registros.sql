@@ -1,7 +1,7 @@
 -- Crear la base de datos
-CREATE DATABASE registro;
+CREATE DATABASE desafio2-Esteban-Hernandez-544;
 -- Conectar a la base de datos
-\c registro;
+\c desafio2-Esteban-Hernandez-544;
 
 -- Crear tabla de inscritos
 -- Esta es una instrucción que crea una tabla llamada inscritos si no existe ya en la base de datos
